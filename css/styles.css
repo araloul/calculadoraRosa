@@ -1,1 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    min-height: 100vh; /* vh = viewport heigth */
+    display: grid;
+    place-items: center;
+    background-color: #F2C4CD;
+    font-family: 'Tektur';
+    font-weight: bold;
+    color:#F2507B;
+    
+}
+.container-text{
+    text-align: center;
+}
+
+.container{
+ text-align: center;
+ padding-bottom: 40px;
+}
+
+h1{
+    font-family: 'Tektur';
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px;
+    padding-top: 50px;
+    text-shadow: 1px 1.5px 1px #2e2224;
+}
+p{
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(248, 248, 105);
+    text-shadow: 1px 1.5px 1px #2e2224;
+}
+
+.calculadora{
+    background-color:#F2507B;
+    display: grid;
+    grid-template-columns: repeat(4,1fr); /* fr nos ayuda a dimensionar las filas y columnas de forma flexible fr representa una fracción del espacio disponible en una fracción por eso en este caso ponemo las 4 columnas y que se representara a 1fr  una fracción en el contenedor*/
+    width: 300px;
+    border-radius: 10px 10px 50px 50px;
+    padding: 20px;  
+    box-shadow: 10px 10px  #948184;
+
+}
+.pantalla{
+    grid-column: 1 / 5; /* esto significa que va a ocupar el ancho total de las columnas*/
+    padding: 10px; /*tamaño de la pantalla*/
+    margin: 10px;
+    font-size: 30px;
+    text-align: right; /* ayuda a mantener el texto alineado a la derecha*/
+    background-color: rgb(239, 241, 181);
+    box-shadow: 5px 5px 7px -5px #2e2224; 
+    color: #F2507B;
+}
+.btn{
+  
+    margin: 2px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 35px;
+    border: none;
+    background-color: rgb(251, 166, 196);
+    box-shadow: 5px 5px 10px -5px #2e2224; /*me ayuda a poner sombra a los botoncitos*/
+    grid-gap: 10px 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.btn:hover{
+    background-color: rgb(233, 239, 47); /* me ayuda a poner efecto al pasar el cursor sobre*/
+
+}
+.btnEspecial{
+  
+    margin: 2px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 35px;
+    border: none;
+    background-color: rgb(251, 166, 196);
+    box-shadow: 5px 5px 10px -5px #2e2224; /*me ayuda a poner sombra a los botoncitos*/
+    grid-gap: 10px 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.btnEspecial:hover{
+    background-color: rgb(233, 239, 47); /* me ayuda a poner efecto al pasar el cursor sobre*/
+
+}
+
 
